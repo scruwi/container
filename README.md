@@ -9,6 +9,12 @@ My DI Container
 
 It's my own implementation PSR-11 Container Interface.
 
+## Installation
+
+```shell
+composer require scruwi/container
+```
+
 ## Init
 
 ```php
