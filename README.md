@@ -18,7 +18,7 @@ $container = new Container([
 - [`ParameterResolver`](#ParameterResolver) - define scalar parameters, that can be set to constructors
 - [`DefinitionResolver`](#DefinitionResolver) - define paths to definitions
 
-You can implement your resolvers in a project if you need them. Look at the Interfaces namespace.
+You can implement your resolvers in a project if you need them. Look at the `Interfaces` namespace.
 
 ### ClassResolver
 
@@ -59,8 +59,8 @@ class SpecificClass
 }
 ```
 
-You can create a specific resolver in your way and use it in your project. Just implement ParameterResolverInterface and
-specify it during container construct.
+You can create a specific resolver in your way and use it in your project. Just implement `ParameterResolverInterface`
+and specify it during container construct.
 
 ### DefinitionResolver
 
@@ -71,7 +71,7 @@ specific `ReflectionClassDefinition`, that constructs classes by its reflections
 to create their object.
 
 You should create as many definitions in your project, as you need and specify it during container construct or append
-it later by $container->addDefinition() method. Any definition must implement DefinitionInterface.
+it later by `$container->addDefinition()` method. Any definition must implement `DefinitionInterface`.
 
 Typical definition class looks like this:
 
