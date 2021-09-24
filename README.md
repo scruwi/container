@@ -15,7 +15,7 @@ It's my own implementation PSR-11 Container Interface.
 $container = new Container([
     new ClassResolver(['App\\Namespace1', 'App\\Namespace2']),
     new ParameterResolver(['param1' => true, 'param2' => 'string']),
-    new DefinitionResolver(['ClassFQN\\Definition1', 'ClassFQN\\Definition2']),
+    new DefinitionResolver([Definition1:class, Definition2:class]),
 ]);
 ```
 
