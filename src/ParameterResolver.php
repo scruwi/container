@@ -20,8 +20,8 @@ class ParameterResolver implements ParameterResolverInterface
 
     public function __invoke(\ReflectionParameter $parameter, ?BuildContext $context, ContainerInterface $container)
     {
-        if ($parameterClass = $parameter->getClass()) {
-            $id = $parameterClass->name;
+        if (($parameterType = $parameter->getType()) && !$parameterType->isBuiltin()) {
+            $id = $parameterType->getName();
             $context && $context->setParameter($parameter);
 
             return $container->build($id, $context);
