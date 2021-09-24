@@ -2,6 +2,8 @@
   "name": "scruwi/container",
   "description": "PSR-11 Container implementation",
   "type": "library",
+  "license": "MIT",
+  "keywords": ["PHP", "PSR-11", "Container", "DI"],
   "require": {
     "php": "^7.4|^8.0",
     "psr/container": "^2.0"
@@ -24,5 +26,6 @@
       "name": "toxxxa",
       "email": "toxxxa@gmail.com"
     }
-  ]
+  ],
+  "minimum-stability": "stable"
 }
