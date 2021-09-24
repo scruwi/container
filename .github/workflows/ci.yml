@@ -13,7 +13,7 @@ jobs:
         with:
           php_extensions: xdebug
           configuration: phpunit.xml
-          args: -coverage-clover=coverage.xml
+          args: --coverage-clover=coverage.xml
         env:
           XDEBUG_MODE: coverage
       - uses: codecov/codecov-action@v2.1.0
