@@ -1,6 +1,6 @@
 # My DI Container
 
-My own implementation PSR-11 Container Interface.
+It's my own implementation PSR-11 Container Interface.
 
 ## Init
 
@@ -14,9 +14,9 @@ $container = new Container([
 
 ## Resolvers
 
-- [`ClassResolver`](#ClassResolver) - define namespaces, that allowed for autowire
-- [`ParameterResolver`](#ParameterResolver) - define scalar parameters, that can be set to constructors
-- [`DefinitionResolver`](#DefinitionResolver) - define paths to definitions
+- [`ClassResolver`](#ClassResolver) - defines namespaces, that are allowed to autowire
+- [`ParameterResolver`](#ParameterResolver) - defines scalar parameters, that can be set to constructors
+- [`DefinitionResolver`](#DefinitionResolver) - defines paths to definitions
 
 You can implement your resolvers in a project if you need them. Look at the `Interfaces` namespace.
 
@@ -50,7 +50,7 @@ class SpecificClass
 }
 ```
 
-Parameter with default value does not need to resolve by the config:
+Parameter with default value does not have to be resolved by the config:
 
 ```php
 class SpecificClass
@@ -66,12 +66,12 @@ and specify it during container construct.
 
 Attach definitions to container.
 
-**Definition**, there is no more than a factory, that creates an object in a specific way. There is one
-specific `ReflectionClassDefinition`, that constructs classes by its reflections. Any autowired classes use that factory
+**Definition**, there is no more than a factory that creates an object in a specific way. There is one
+specific `ReflectionClassDefinition` that constructs classes by their reflections. All autowired classes use that factory
 to create their object.
 
-You should create as many definitions in your project, as you need and specify it during container construct or append
-it later by `$container->addDefinition()` method. Any definition must implement `DefinitionInterface`.
+You should create as many definitions in your project as you need and specify them during container construct or attach
+them later by `$container->addDefinition()` method. Any definition must implement `DefinitionInterface`.
 
 Typical definition class looks like this:
 
@@ -90,7 +90,7 @@ class ExampleDefinition implements DefinitionInterface
 }
 ```
 
-You can fetch some default parameters from ParameterResolver:
+You can fetch some default parameters from the ParameterResolver:
 
 ```php
     public function __invoke(Container $container, ParameterResolver $resolver, BuildContext $context): object
@@ -124,5 +124,5 @@ class InterfaceDefinition implements DefinitionInterface
 ## Exceptions
 
 - `NotFoundExceptionInterface` - for an unknown entry
-- `ContainerExceptionInterface` - for any common exceptions in the container
+- `ContainerExceptionInterface` - for all common exceptions in the container
 - `CircularReferencesException` - there is a special exception for circular references in the container
