@@ -12,6 +12,5 @@ jobs:
       - uses: php-actions/phpunit@v9
         with:
           configuration: phpunit.xml
-          args: --coverage-text
-      - name: Codecov
-        uses: codecov/codecov-action@v2.1.0
+          args: --coverage-clover=coverage.xml
+      - uses: codecov/codecov-action@v2.1.0
