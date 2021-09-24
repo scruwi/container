@@ -1,6 +1,9 @@
-[![codecov](https://codecov.io/gh/scruwi/container/branch/main/graph/badge.svg?token=X7A4LI0F3E)](https://codecov.io/gh/scruwi/container)
+My DI Container
+====
 
-# My DI Container
+[![Latest Stable Version](https://poser.pugx.org/scruwi/container/v/stable.png)](https://packagist.org/packages/scruwi/container)
+[![Total Downloads](https://poser.pugx.org/scruwi/container/downloads.png)](https://packagist.org/packages/scruwi/container)
+[![codecov](https://codecov.io/gh/scruwi/container/branch/main/graph/badge.svg?token=X7A4LI0F3E)](https://codecov.io/gh/scruwi/container)
 
 It's my own implementation PSR-11 Container Interface.
 
