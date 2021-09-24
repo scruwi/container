@@ -1,0 +1,28 @@
+{
+  "name": "scruwi/container",
+  "description": "PSR-11 Container implementation",
+  "type": "library",
+  "require": {
+    "php": "^7.4",
+    "psr/container": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "provide": {
+    "psr/container-implementation": "^1.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Scruwi\\Container\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "toxxxa",
+      "email": "toxxxa@gmail.com"
+    }
+  ]
+}
