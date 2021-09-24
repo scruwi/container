@@ -109,7 +109,7 @@ class InterfaceDefinition implements DefinitionInterface
     {
         return SomeInterface::class;
     }
-}
+
     public function __invoke(Container $container, ParameterResolver $resolver, BuildContext $context): object
     {
         if ($context->getTargetClass() === ClassWithInterfaceDependency::class) {
@@ -118,6 +118,7 @@ class InterfaceDefinition implements DefinitionInterface
 
         return new SomeClassImplementsInterface1();
     }
+}
 ```
 
 ## Exceptions
