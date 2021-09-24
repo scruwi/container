@@ -11,6 +11,7 @@ jobs:
       - uses: php-actions/composer@v5
       - uses: php-actions/phpunit@v9
         with:
+          php_extensions: xdebug
           configuration: phpunit.xml
           args: --coverage-clover=coverage.xml
       - uses: codecov/codecov-action@v2.1.0
