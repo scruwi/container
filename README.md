@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/scruwi/container/branch/main/graph/badge.svg?token=X7A4LI0F3E)](https://codecov.io/gh/scruwi/container)
+
 # My DI Container
 
 It's my own implementation PSR-11 Container Interface.
