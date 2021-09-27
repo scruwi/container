@@ -18,16 +18,13 @@ class BuildContext
 
     private function checkCircularDependency(): void
     {
-        $lastClass = $this->path
-            ? $this->path[array_key_last($this->path)]
-            : null;
-
+        $lastClass = array_key_last($this->path);
         $class = $this->getTargetClass();
-        if ($class !== $lastClass && in_array($class, $this->path, true)) {
-            throw new CircularReferencesException($this->path);
+        if ($class !== $lastClass && array_key_exists($class, $this->path)) {
+            throw new CircularReferencesException(array_keys($this->path));
         }
 
-        $this->path[] = $class;
+        $this->path[$class] = true;
     }
 
     public function getTargetClass(): ?string
