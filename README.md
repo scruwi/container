@@ -1,9 +1,7 @@
 My DI Container
 ====
 
-[![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
-
-
+![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2.svg)
 [![Latest Stable Version](https://poser.pugx.org/scruwi/container/v/stable.png)](https://packagist.org/packages/scruwi/container)
 [![Total Downloads](https://poser.pugx.org/scruwi/container/downloads.png)](https://packagist.org/packages/scruwi/container)
 [![License](http://poser.pugx.org/scruwi/container/license)](https://packagist.org/packages/scruwi/container)
